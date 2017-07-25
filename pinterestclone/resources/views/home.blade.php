@@ -1,6 +1,9 @@
 @extends('layouts/master')
 
 @section('content')
+	
+	@if(isset($name)) <h3>Author : {{ $name }}</h3> @endif
+
 	@foreach($pins as $pin)
 	<div class="col-md-4">
 
@@ -9,10 +12,7 @@
 	        
 	    	<div class="caption">
 	        	<p class="text-center">{{ $pin->title }}</p>
-	          	<p>
-		          	<span class="glyphicon glyphicon-heart"> {{ $pin->likes }} </span> 
-		          	| <span class="glyphicon glyphicon-share"> {{ $pin->shares }}</span>
-	          	</p>
+				@include('layouts/actions')
 	   		</div>
 	    </div>
 	</div>

@@ -22,10 +22,9 @@
 	        
 	    	<div class="caption">
 	        	<p class="text-center">{{ $pin->title }}</p>
-	          	<p>
-		          	<span class="glyphicon glyphicon-heart"> {{ $pin->likes }} </span> 
-		          	| <span class="glyphicon glyphicon-share"> {{ $pin->shares }}</span>
-	          	</p>
+				
+				@include('layouts/actions')
+	          	
 	          	<p class="text-right">
 	          		<a href="/pins/{{ $pin->id }}/delete"><span class="glyphicon glyphicon-remove"></span></a>
 	          	</p>

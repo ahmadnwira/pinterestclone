@@ -14,6 +14,6 @@ Route::get('/pins/recent','PinController@recent');
 /* only if you are auth this is your pins */
 Route::get('/yourboard','UserController@index');
 /* this should be ajax */
-Route::get('/pins/{id}/like','UserController');
-/* this should be ajax */
-Route::get('/pins/{id}/share','UserController');
+Route::get('/pins/{actoin}/{id}/action','UserController@userAction');
+Route::get('pins/{user}/album','UserController@showAlbum');
+
