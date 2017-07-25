@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts/master')
 
 @section('content')
 <div class="container">
@@ -65,6 +65,8 @@
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
+                                
+                                <a class="btn btn-link" href="/login">login</a>                                
                             </div>
                         </div>
                     </form>

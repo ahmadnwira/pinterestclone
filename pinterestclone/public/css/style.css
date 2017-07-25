@@ -1,0 +1,60 @@
+/* helpers */
+.space{
+    margin: 4em 0em 0em 32em;
+}
+
+/* customizatoin */
+.navbar-default{
+	margin-bottom:0;
+}
+
+/* buttons */
+.btn-primary{
+	background-color:#fff;
+	color:#2e6da4;
+	transition:background-color .25s;
+	border:2px solid #2e6da4;
+	border-radius:0;
+}
+
+.btn-default{
+	border:2px solid #ccc;
+	margin-right:.25em;
+}
+.btn-success{
+	background-color:#fff;
+	color:#5cb85c;
+	transition:background-color .25s;
+	border:2px solid #5cb85c;
+	border-radius:0;
+}
+.circle{
+	background-color:#2e6da4;
+	color:#fff; 
+	border-radius:3em;
+	width:3em;
+	height:3em;
+	line-height:2;
+}
+
+.jumbotron{
+	background-color:#00695c;
+	padding-left:2em;
+	color:#fff;
+}
+.jumbotron p::before { 
+    content: "- ";
+}
+
+.footer{
+    width: 100%;
+    height: 4em;
+    background-color:#999;
+    color:#fff;
+}
+.footer p{
+	padding:1em;
+}
+.footer a{
+	color:#ffeb3b;
+}
