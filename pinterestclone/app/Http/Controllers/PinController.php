@@ -46,4 +46,9 @@ class PinController extends Controller{
         $pin->delete();
        return redirect('/yourboard');
     }
+
+    public function detailes($id){
+        
+        return view('pins/pin',['pin'=>Pin::find($id)]);
+    }
 }

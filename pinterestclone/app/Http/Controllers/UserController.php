@@ -16,7 +16,7 @@ class UserController extends Controller
     public function index(){
     	$user = Auth::user();
 	    
-	    return view('users/index',['pins'=>$user->pins]);
+	    return view('users/index',['pins'=>$user->pins,'actions'=>$user->actions]);
     }
 
   public function userAction($action,$pin_id){

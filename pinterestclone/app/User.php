@@ -20,4 +20,8 @@ class User extends Authenticatable
     public function pins(){
          return $this->hasMany('App\Pin');
     }
+
+    public function Actions(){
+         return $this->hasMany('App\userActions');
+    }
 }

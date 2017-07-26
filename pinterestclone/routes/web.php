@@ -9,6 +9,7 @@ Route::post('/pins/store','PinController@store');
 Route::get('pins/{pin}/delete','PinController@delete');
 /* most recent 50 */
 Route::get('/pins/recent','PinController@recent');
+Route::get('/pin/{id}','PinController@recent');
 
 /* user routes*/
 /* only if you are auth this is your pins */

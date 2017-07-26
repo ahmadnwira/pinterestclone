@@ -2,6 +2,10 @@
 .space{
     margin: 4em 0em 0em 32em;
 }
+.side{
+	background-color:#ccc;
+	border-left:3px solid #333;
+}
 
 /* customizatoin */
 .navbar-default{
